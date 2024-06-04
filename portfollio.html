@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personall portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/40e49628d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div id="container">
+        <nav>
+            
+            <h1 id="abdul"><span>A</span>RA..</h1>
+            <ul id="sidemenu">
+                <li><a href="#header" >Home</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="#services" >Services</a></li>
+                <li><a href="#portfolio" >portfolio</a></li>
+                <li><a href="#contact" >Contact</a></li>
+                <i class="fas fa-times" onclick= closemenu()></i>
+            </ul><i class="fas fa-bars"  onclick= openmenu()></i>
+        </nav>
+        <div class="header-text">
+            <p>FULL STACK DEVELOPER</p>
+            <h1>Hi,I'm<span> Abdul Rahman Anas</span> <br>From India</h1>
+        </div>
+    </div>
+ </div> 
+ <!--------ABOUT------- -->
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/abdul.png"> </div>
+            <div class="about-col-2">
+                <h1 id="sub-title">About Me</h1>
+            
+        <div class="tab-titles">
+            <P class="tab-links               active-link" onclick="opentab('skills')">Skills</P>
+            <P class ="tab-links active-tab" onclick= "opentab('education')">Education</P>
+        
+          
+            
+        </div> 
+    <div class= " tab-contents "  id="skills">
+        <ul>
+            <li><span>FRONTEND DEVELOPER<br></span>CODING FOR WEBSITES</li>
+            <li><span>BACKEND DEVELOPER<br></span>CODING FOR WEBSITES</li>
+            <li><span>DATABASE<br></span>CODING FOR WEBSITES</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>B.E 1ST YEAR<br></span>FRONTEND</li>
+            <li><span>2ND YEAR<br></span>BACKEND</li>
+            <li><span>3RD YEAR<br></span>DATABASE</li>
+        </ul>
+    </div>
+    
+</div>
+        
+    </div>
+ </div>
+</div>
+<!-------------------services---------->
+<div id="services">
+    <div class="container">
+        <h1 id="sub-title">MY SERVICES</h1><div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita incidunt ad fuga sed quisquam, ullam obcaecati corporis saepe dolores.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>FRONTEND</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita incidunt ad fuga sed quisquam, ullam obcaecati corporis saepe dolores.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+               <i class="fa-brands fa-app-store-ios"></i>
+                <h2>BACKEND</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita incidunt ad fuga sed quisquam, ullam obcaecati corporis saepe dolores.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 id="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media Website</h3>
+                    <p>The  Website connects you you to the talented people around the world.search it from browser</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Port Folio website</h3>
+                    <p>The  Website connects you you to the talented people around the world.search it from browser</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <p>The  Website connects you you to the talented people around the world.search it from browser</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="#" class="btn">see more</a>
+</div>
+</div>
+ <!------------- contact  ----------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abdulrahmananas.bm22@bitsathy.ac.in</p>
+                <p><i class="fa-solid fa-square-phone"></i>9087515219</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+                <a href="/Abdul Resume.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name=" Email" placeholder="Your Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button 
+                    type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © ARA.made with by <i class="fa-solid fa-heart"></i>easy tutorial</p>
+        
+    
+    </div>
+ </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "50px";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyGZep8M5usQ9Lsu7HYYFMGwS5q-2lqoZA5UtzKdYPSwccXpJ_MKwzYPTwl3xvsLagRxQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{ msg.innerHTML ="Message sent successfully"
+      setTimeout(function(){
+        msg.innerHTML=""},5000)
+        form.reset()
+  })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
